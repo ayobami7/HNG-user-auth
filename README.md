@@ -49,8 +49,7 @@ This project implements a user authentication system and organisation management
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
-   cd backend-task
+   git clone https://github.com/ayobami7/HNG-user-auth.git
    ```
 
 2. Install dependencies:
