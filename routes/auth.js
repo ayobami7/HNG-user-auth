@@ -38,7 +38,7 @@ router.post(
         password: hashedPassword,
         phone,
       });
-
+ 
       const organisation = await Organisation.create({
         orgId: require('uuid').v4(),
         name: `${firstName}'s Organisation`,

@@ -50,7 +50,7 @@ describe('Auth Endpoints', () => {
         password: 'password',
       });
     expect(res.statusCode).toEqual(422);
-    expect(res.body.errors[0].field).toBe('firstName');
+    expect(res.body.errors[0].path).toBe('firstName');
   });
 
   it('Should fail if there’s duplicate email or userId', async () => {
