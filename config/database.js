@@ -1,7 +1,7 @@
-// config/database.js
+require('dotenv').config();
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('HNG-user-auth', 'postgres', 'postgres', {
+const sequelize = new Sequelize(process.env.DATABASE_URI, {
   host: 'localhost',
   dialect: 'postgres',
   logging: false,
